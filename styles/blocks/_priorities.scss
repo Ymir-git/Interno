@@ -1,0 +1,64 @@
+@use '../helpers' as *;
+
+.priorities {
+
+  padding-block: 100px;
+
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 75px 40px 70px;
+    max-width: 400px;
+    min-height: 395px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      padding-bottom: 17px;
+      font-family: var(--font-family-accent);
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 156%;
+      letter-spacing: 0.01em;
+    }
+
+    &-text {
+      color: var(--color-grey);
+      font-size: 22px;
+      line-height: 150%;
+    }
+
+    &-link {
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+
+      a {
+        max-width: 125px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        
+        img,p {
+          transition: 0.2s;
+        }
+
+        &:hover {
+          p {
+            transform: scale(1.01);
+          }
+          img {
+            transform: translateX(2px);
+          }
+        }
+      }
+    }
+  }
+}

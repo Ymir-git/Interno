@@ -1,0 +1,15 @@
+@use 'helpers' as *;
+
+:root {
+  --color-light: #FFFFFF;
+  --color-dark: #292F36;
+  --color-lightgrey: #F4F0EC;
+  --color-grey: #4D5053;
+  --color-accent: #CDA274;
+
+  --container-width: 1200px;
+  --container-padding-x: 15px;
+
+  --font-family-base: 'Jost', sans-serif;
+  --font-family-accent: 'DM-Serif', sans-serif;
+}
