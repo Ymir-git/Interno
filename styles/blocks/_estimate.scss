@@ -1,0 +1,77 @@
+@use '../helpers' as *;
+
+.estimate {
+  display: flex;
+  align-items: center;
+  gap: 77px;
+  padding-bottom: 140px;
+
+  &__main {
+
+    .title {
+      font-family: var(--font-family-accent);
+      padding-bottom: 42px;
+    }
+
+    .text {
+      font-size: 22px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: var(--color-grey);
+      padding-bottom: 30px;
+    }
+
+    .call-us {
+      display: flex;
+      align-items: center;
+      width: 267px;
+      gap: 20px;
+      padding-bottom: 30px;
+      white-space: nowrap;
+
+      .call-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 29px;
+        background-color: var(--color-lightgrey);
+        border-radius: 100%;
+        transition: 0.3s ease-in-out;
+        svg {
+          path {
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .call-text {
+        color: var(--color-grey);
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        transition: 0.3s ease-in-out;
+
+        .tel {
+          font-size: 24px;
+        }
+      }
+
+      &:hover {
+        .call-img {
+          background-color: var(--color-accent);
+          svg {
+            path {
+              stroke: var(--color-dark);
+            }
+          }
+        }
+
+        .call-text {
+          color: var(--color-accent);
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+}
+

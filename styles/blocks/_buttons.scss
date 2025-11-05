@@ -10,11 +10,19 @@
   font-size: 18px;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
+
+  img {
+    transition: 0.3s ease-in-out;
+  }
 
   &:hover {
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.25);
     transform: scale(1.01);
+
+    img {
+      transform: translateX(4px) scaleY(0.8);
+    }
   }
   &:active {
     transform: none;
