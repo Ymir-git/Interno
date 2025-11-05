@@ -1,0 +1,81 @@
+@use '../helpers' as *;
+
+.projects {
+  text-align: center;
+  padding-bottom: 140px;
+
+  &__title {
+    font-family: var(--font-family-accent);
+    font-size: 47px;
+    line-height: 133%;
+    padding-bottom: 20px;
+  }
+
+  &__subtitle {
+    color: var(--color-grey);
+    font-size: 22px;
+    line-height: 150%;
+    padding-bottom: 70px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px 20px;
+  }
+
+  &__item {
+
+    &-img { 
+      border-radius: 0 80px 0 0;
+      display: flex;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      justify-content: space-between;
+      padding-top: 26px;
+
+      .text {
+
+        h4 {
+          font-family: var(--font-family-accent);
+          font-size: 24px;
+          line-height: 156%;
+          font-weight: 400;
+          transition: 0.3s ease-in-out;
+        }
+
+        p {
+          color: var(--color-grey);
+          font-size: 22px;
+          line-height: 150%;
+          transition: 0.3s ease-in-out;
+        }
+      }
+
+      .arrow {
+        display: flex;
+        padding: 27px 30px;
+        background-color: var(--color-lightgrey);
+        border-radius: 100%;
+        transition: 0.3s ease-in-out;
+      }
+
+      &:hover {
+        .arrow {
+          background-color: var(--color-accent);
+          box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
+        }
+        .text {
+          h4,p {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+  }
+}
