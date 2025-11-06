@@ -1,0 +1,114 @@
+@use '../helpers' as *;
+
+.blogs {
+  text-align: center;
+  padding-top: 145px;
+  padding-bottom: 141px;
+
+  &-title {
+    font-family: var(--font-family-accent);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0em;
+  }
+
+  &-subtitle {
+    color: var(--color-grey);
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    padding-top: 21px;
+    padding-bottom: 70px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    text-align: start;
+
+    &-item {
+      border: 1px solid #e7e7e7;
+      border-radius: 62px;
+      transition: 0.4s ease-in-out;
+
+      .blog-link {
+        max-width: 387px;
+        padding: 21px;
+        display: flex;
+        flex-direction: column;
+        .photo {
+          position: relative;
+
+          .images {
+            border-radius: 45px 45px 0 0;
+          }
+
+          .design {
+            position: absolute;
+            left: 24px;
+            bottom: 29px;
+            padding: 9px 10px 11px;
+            border-radius: 8px 8px 8px 0;
+            color: var(--color-grey);
+            background-color: var(--color-light);
+            transition: 0.4s ease-in-out;
+          }
+        }
+  
+        .text {
+          font-family: var(--font-family-accent);
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 140%;
+          letter-spacing: 0.02em;
+          padding-top: 15px;
+          padding-bottom: 10px;
+        }
+  
+        .date {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .time {
+            color: var(--color-grey);
+            transition: 0.4s ease-in-out;
+          }
+
+          .arrow {
+            display: flex;
+            padding: 19px 22px;
+            background-color: var(--color-lightgrey);
+            border-radius: 100%;
+            transition: 0.4s ease-in-out;
+          }
+        }
+
+      }
+      &:hover {
+        box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
+
+        .blog-link {
+          .photo {
+            .design {
+              background-color: var(--color-accent);
+            }
+          }
+          .date {
+            .time {
+              transform: translateX(5px);
+            }
+          }
+          .arrow{
+            background-color: var(--color-accent);
+            box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
+          }
+        }
+      }
+    }
+
+  }
+}

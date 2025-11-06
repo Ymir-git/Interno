@@ -73,5 +73,12 @@
       }
     }
   }
+
+  &__image {
+    img {
+      display: flex;
+      border-radius: 0 326px 0 123px;
+    }
+  }
 }
 
