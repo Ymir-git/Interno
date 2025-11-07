@@ -8,20 +8,6 @@
   padding-top: 34px;
   padding-bottom: 38px;
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    transition: 0.3s;
-
-    &:hover {
-      transform: scale(1.01);
-    }
-    &:active {
-      transform: none;
-    }
-  }
-
   .menu {
     &__list {
       display: flex;
@@ -39,5 +25,19 @@
         color: var(--color-accent);
       }
     }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+  &:active {
+    transform: none;
   }
 }

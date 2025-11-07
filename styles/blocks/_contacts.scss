@@ -1,0 +1,32 @@
+@use '../helpers' as *;
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  padding-top: 100px;
+  padding-bottom: 95px;
+  margin-bottom: 79px;
+  border-radius: 70px;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+
+  &__title {
+    font-size: 50px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    padding-bottom: 9px;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    padding-bottom: 30px;
+  }
+
+  .buttons > span {
+    letter-spacing: 0.01em;
+  }
+}
